@@ -1,0 +1,34 @@
+#nav-icon {
+  width: 25px;
+  &:after, &:before, div {
+    background-color: var(--on-primary-color);
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 4px 0;
+    transition: all .2s ease-in-out;
+    border-radius: 1px;
+  }
+}
+#nav-icon.open {
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    transform: translateY(6px) rotate(135deg);
+  }
+
+  &:after {
+    transform: translateY(-6px) rotate(-135deg);
+  }
+
+  div {
+    transform: scale(0);
+  }
+}
+@media (min-width:1024px) {
+  #nav-icon {
+    display: none
+  }
+}
