@@ -169,6 +169,13 @@ ul.inline{
   flex-wrap: wrap;
 }
 
+a{
+  text-decoration: none;
+  color: var(--link-color);
+  &:hover{
+    color: var(--on-link-color);
+  }
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

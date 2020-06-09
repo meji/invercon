@@ -2,6 +2,22 @@ footer#footer{
   #over-footer{
     background: var(--secondary-color);
     color: #fff;
-
+    padding: var(--m);
+    p{
+      margin: 0;
+    }
+    a{
+      color: #fff;
+      &:hover{
+        color: var(--on-primary-color)
+      }
+    }
+  }
+  #under-footer{
+    margin-top: var(--m);
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

@@ -1,0 +1,10 @@
+.btn{
+  border-radius: var(--rm);
+  padding: var(--s) var(--m);
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.8rem;
+  background: var(--terciary-color);
+  color: var(--on-terciary-color);
+  font-weight: 600;
+}
