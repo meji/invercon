@@ -1,0 +1,36 @@
+:root {
+  /*Typography*/
+  --body-font: 'Open sans', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+  --base-font-size: 18px;
+  --base-line-height: 1.66;
+
+  /*Padding*/
+  --base-p: 0.25rem;
+  --s: calc(var(--base-p) * 2);
+  --m: calc(var(--base-p) * 4);
+  --l: calc(var(--base-p) * 8);
+
+  /*Radius*/
+  --rs: 2px;
+  --rm: 4px;
+  --rl: 6px;
+
+  /*Form*/
+
+  --border-form-focus: 1px solid #a60146;
+  --border-form-error: 1px solid red;
+  --border-form-ok: 1px solid green;
+  --color-ok: green;
+
+  /*Colors*/
+  --text-color: #333;
+  --main-color: #00280F;
+  --on-main-color: #FFE8C7;
+  --secondary-color: #403117;
+  --terciary-color: #BDA177;
+  --bg-color: #F2EEE9;
+  --bg-color-light: #FCFAF7;
+  --on-terciary-color: var(--secondary-color)
+}
+
