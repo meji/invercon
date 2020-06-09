@@ -476,6 +476,9 @@ header#header #buttons ul {
   justify-content: space-between;
   list-style: none;
 }
+header#header #buttons ul i {
+  margin-right: var(--s);
+}
 header#header.open #menunav > ul {
   transform: translateX(0);
   opacity: 1;
@@ -551,10 +554,14 @@ footer#footer #over-footer a:hover {
 }
 footer#footer #under-footer {
   margin-top: var(--m);
+  font-size: 0.8rem;
 }
 footer#footer #under-footer .container {
   display: flex;
   justify-content: space-between;
+}
+footer#footer #under-footer .container li {
+  margin-right: var(--l);
 }
 
 /*# sourceMappingURL=main.css.map */

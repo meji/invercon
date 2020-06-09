@@ -15,9 +15,11 @@ footer#footer{
   }
   #under-footer{
     margin-top: var(--m);
+    font-size: 0.8rem;
     .container{
       display: flex;
       justify-content: space-between;
+      li{margin-right: var(--l)}
     }
   }
 }

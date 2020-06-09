@@ -80,6 +80,7 @@ header#header{
       display: flex;
       justify-content: space-between;
       list-style: none;
+      i{margin-right: var(--s)}
     }
   }
   &.open{
