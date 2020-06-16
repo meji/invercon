@@ -1,0 +1,37 @@
+#bodegas{
+  .container{
+    display: flex;
+    flex-direction: column;
+    h2{
+      order: 1;
+    }
+    img{
+      &.logo{
+        width: 150px;
+        order: 2;
+        margin: calc(var(--l)*2) auto;
+      }
+    }
+    > *{
+      order: 3
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  #bodegas{
+    .container{
+      flex-wrap: wrap;
+      > img {
+        flex: 3;
+        &.logo {
+          order: 3;
+          flex: 1;
+        }
+      .swiper-container{
+          flex: 100%;
+        }
+      }
+    }
+  }
+}

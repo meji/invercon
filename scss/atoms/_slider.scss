@@ -1,0 +1,16 @@
+.swiper-container{
+  width: 100%;
+  margin: var(--l) 0;
+}
+.wine-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  img{
+    width: 90px;
+    height: auto;
+    max-height: 60px;
+    filter: grayscale(100%);
+  }
+}

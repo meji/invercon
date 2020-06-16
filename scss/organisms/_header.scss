@@ -39,7 +39,7 @@ header#header{
       margin: var(--m) auto;
     }
     > ul > li {
-      font-weight: bold;
+      font-weight: 400;
       font-size: 2rem;
       list-style-type: none;
       > ul {
@@ -95,7 +95,7 @@ header#header{
   }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1024px){
   header#header{
     .container{
       justify-content: flex-start;

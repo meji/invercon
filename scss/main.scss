@@ -2,20 +2,27 @@
 
 @import './theme';
 
+//Utils
+@import './utils/reset';
+@import './utils/swiper.min';
+
 //Atoms
-@import './atoms/reset';
 @import './atoms/buttons';
 @import './atoms/grid';
 @import './atoms/logo';
 @import './atoms/nav-icon';
+@import './atoms/slider';
 @import './atoms/typos';
 @import './atoms/utils';
 
 //Molecules
 @import './molecules/wine';
+@import './molecules/country';
 
 //Organisms
 @import './organisms/header';
+@import './organisms/hero';
 @import './organisms/footer';
 
 //Pages
+@import './pages/home';

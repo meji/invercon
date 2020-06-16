@@ -1,0 +1,47 @@
+.country{
+  width: 375px;
+  height: 375px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -16px var(--l);
+  img.bg{
+    z-index: -1;
+    position: absolute;
+  }
+  .content{
+    padding: var(--l);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+      text-transform: uppercase;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0;
+    }
+    p, .btn{display: none;}
+  }
+  &:hover{
+    transition: var(--transition);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+    .content{justify-content: space-between;}
+    h3{
+      color: #333;
+      margin-bottom: var(--m);
+    }
+    p, .btn{display: block;}
+    img{
+      opacity:0;
+      transition: var(--transition);
+    }
+  }
+  .map{
+    position: absolute;
+    top: -40px;
+    right: 40px;
+  }
+}

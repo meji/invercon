@@ -1,4 +1,6 @@
 :root {
+  --transition: 0.3s;
+
   /*Typography*/
   --body-font: 'Open sans', sans-serif;
   --title-font: 'Raleway', sans-serif;
@@ -17,7 +19,7 @@
   --rl: 6px;
 
   /*Form*/
-
+  --border: 1px solid #ccc;
   --border-form-focus: 1px solid #a60146;
   --border-form-error: 1px solid red;
   --border-form-ok: 1px solid green;
