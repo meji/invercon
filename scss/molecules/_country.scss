@@ -1,11 +1,12 @@
 .country{
-  width: 375px;
+  width: calc(100% + 32px);
   height: 375px;
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 -16px var(--l);
+  position: relative;
   img.bg{
     z-index: -1;
     position: absolute;
@@ -34,14 +35,39 @@
       margin-bottom: var(--m);
     }
     p, .btn{display: block;}
-    img{
+    img:not(.map){
       opacity:0;
       transition: var(--transition);
+    }
+    .map{
+      right: 20px;
+      top: 20px;
+      max-width: 40%;
     }
   }
   .map{
     position: absolute;
-    top: -40px;
-    right: 40px;
+    right: 10px;
+    top: -30px;
+    filter: invert(1);
+  }
+}
+
+@media (min-width: 400px) {
+  .country {
+    width: 375px;
+    margin: 0 auto var(--l);
+  }
+}
+
+@media (min-width: 768px) {
+  .country {
+    &:nth-child(even) {
+      margin-top: 120px;
+    }
+    .map{
+      top: -40px;
+      right: -40px;
+    }
   }
 }

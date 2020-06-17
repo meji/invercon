@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Slider de 4 - 3 - 2 - 1
 const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 6.5,
+  slidesPerView: 6,
   speed: 1000,
   loop: true,
   autoplay: {
@@ -29,20 +29,19 @@ const swiper = new Swiper('.swiper-container', {
     disableOnInteraction: true
   },
   spaceBetween: 50,
-  // navigation: {
-  //   nextEl: '.swiper-button-next-4',
-  //   prevEl: '.swiper-button-prev-4'
-  // },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
   allowTouchMove: true,
   breakpoints: {
-    1400: {
-      slidesPerView: 10.5
-    },
-    1024: {
-      slidesPerView: 6.5
+    768: {
+      slidesPerView: 5.7,
+      spaceBetween: 30
     },
     468: {
-      slidesPerView: 3.7
+      slidesPerView: 3.7,
+      spaceBetween: 30
     }
   }
 })
