@@ -11,13 +11,18 @@
 @import './atoms/grid';
 @import './atoms/logo';
 @import './atoms/nav-icon';
+@import './atoms/overlay';
+@import './atoms/pagination';
 @import './atoms/slider';
 @import './atoms/typos';
 @import './atoms/utils';
 
 //Molecules
-@import './molecules/wine';
 @import './molecules/country';
+@import './molecules/featured-wine';
+@import './molecules/forms';
+@import './molecules/wine';
+@import './molecules/with_bg';
 
 //Organisms
 @import './organisms/header';
@@ -25,4 +30,8 @@
 @import './organisms/footer';
 
 //Pages
+@import './pages/blog';
+@import './pages/country';
 @import './pages/home';
+@import './pages/contact';
+@import './pages/post';

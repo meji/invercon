@@ -1,0 +1,28 @@
+.paging-navigation {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  margin-top: var(--l);
+}
+.paging-navigation li {
+  list-style-type: none;
+  display: inline-block;
+}
+.paging-navigation .current {
+  background: var(--primary-color);
+  color: var(--on-primary-color);
+  font-weight: 700;
+  border: 1px solid var(--primary-color);
+}
+.paging-navigation a {
+  background: var(--on-primary-color);
+  color: var(--primary-color);
+}
+.paging-navigation a:hover {
+  background: var(--terciary-color);
+  color: var(--on-terciary-color);
+}
+.paging-navigation .page-numbers {
+  padding: 8px 12px;
+  border-radius: 2px;
+}

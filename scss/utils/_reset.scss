@@ -9,6 +9,9 @@ html {
   line-height: var(--base-line-height);
 }
 
+*{ box-sizing: border-box;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -172,6 +175,7 @@ ul.inline{
 a{
   text-decoration: none;
   color: var(--link-color);
+  transition: var(--transition);
   &:hover{
     color: var(--on-link-color);
   }
@@ -250,4 +254,5 @@ a{
     page-break-after: avoid;
   }
 }
+
 

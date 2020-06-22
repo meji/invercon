@@ -1,0 +1,38 @@
+form{
+  max-width: 600px;
+  label{font-size: 81.25%;
+    &.form-check-label{cursor: pointer;}
+  }
+  .form-group{margin: 0 0 16px;
+    input:not([type="checkbox"]):not([type="radio"]), textarea{
+      width: 100%;
+    }
+    &.fifty{
+      input:not([type="checkbox"]):not([type="radio"]), textarea{
+        width: calc(50% - 8px);
+        &:first-child{
+          margin-right: 10px;
+        }
+      }
+    }
+    input[type="checkbox"], input[type="radio"]{
+      margin-right: 8px;
+    }
+
+  }
+  .form-check label{font-size: 70%;}
+  .form-control, input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]) {background: var(--c-bform); border: 2px solid var(--c-bform); font-size: 81.25%; line-height: 1.8; padding:12px ;height: 42px; box-shadow: none; -webkit-appearance: none;
+    &:focus{box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border: 2px solid var(--c-bform);}
+    &:not(:placeholder-shown):not(select){background: #fff; font-weight: bold;}
+  }
+  select.form-control{background:url(img/select-icon.svg) no-repeat; background-position:  center right 12px;  -webkit-appearance: none; appearance: none; -moz-appearance:none;  padding: 6px 12px;}
+  p.submit{margin: 40px 0;}
+}
+
+
+form{
+  .form-control, input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]) {border-radius: 6px;}
+  p.notice{border-radius: 8px;}
+  .form-control:focus::placeholder, input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]):focus::placeholder{font-size: 64.25%; line-height: 1; position: relative; top: -10px;}
+}
+

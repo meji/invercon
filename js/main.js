@@ -14,9 +14,21 @@ function menu_main() {
     });
 }
 
+//Método para mostrar contacto
+
+function showContact(){
+  document.querySelector('.show-contact').addEventListener('click', function(){
+    document.querySelector('.contact-container').classList.toggle("open");
+  })
+  document.querySelector('.contact-container .close').addEventListener('click', function(){
+    document.querySelector('.contact-container').classList.toggle("open");
+  })
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   menu_mobile();
   menu_main();
+  showContact();
 });
 
 //Slider de 4 - 3 - 2 - 1

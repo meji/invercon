@@ -1,0 +1,111 @@
+.wine-container{
+  text-align: left;
+  .img-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 calc(0px - var(--m)) var(--l);
+    padding: var(--l) var(--s);
+    background: #F2EEE9;
+  }
+  .data{
+    text-align: left;
+    margin: var(--l) 0 calc(var(--l)*2);
+    .h4{
+      margin: 0 0 var(--m);
+    }
+    .chars{
+      list-style: none;
+      margin-bottom: var(--m)
+    }
+    .btn{width: 100%;}
+  }
+}
+
+@media (min-width: 520px){
+  .wine-container {
+    margin: 0 -16px;
+    display: flex;
+    background: #ffffff;
+    .img-container{
+      margin: 0;
+      background: transparent;
+      flex: 5;
+      h2{
+        order: 1;
+        margin-top: var(--l);
+        font-size: 1.8rem;
+        margin-bottom: var(--s);
+      }
+      img{
+        order: 2;
+      }
+    }
+    .data{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: var(--l);
+      flex: 6;
+      .h4{
+        font-size: 1.4rem;
+      }
+    }
+    &:nth-child(odd){
+      background: #F2EEE9;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .wine-container {
+    display: block;
+    background: transparent;
+    margin: 0;
+    position: relative;
+    .img-container{
+      margin: 0;
+      padding: var(--s);
+      h2{
+        margin: var(--m) 0 var(--l);
+        order: 2;
+        font-size: 1.4rem;
+      }
+      img{
+        order: 1;
+      }
+    }
+    &:nth-child(even) {
+      .img-container {
+        background: #fff;
+      }
+    }
+    .data {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: var(--transition);
+      justify-content: space-between;
+      p:not(.h4), ul{
+        font-size: 0.8rem;
+        margin-bottom: auto;
+      }
+      p:not(.h4){
+        line-height: 1.5;
+      }
+    }
+    &:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      z-index: 10;
+      .data {
+        opacity: 0.90;
+      }
+    }
+  }
+}

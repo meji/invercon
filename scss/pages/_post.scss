@@ -1,0 +1,35 @@
+
+.post-hero .text-container {
+  h1 {
+    font-size: 2rem;
+  }
+}
+#blog-content{
+  .container{
+    img{
+      margin: var(--m) calc(0px - var(--m)) var(--l);
+      max-width: calc(100% + var(--m)*2);
+    }
+  }
+}
+@media (min-width: 1024px){
+  body:not(.home) .hero.post-hero {
+    margin-bottom: 150px;
+    .text-container  {
+      height: fit-content;
+      top: 50% !important;
+    }
+  }
+  #blog-content{
+    .container{
+      max-width: 800px;
+      img{
+        max-width: 110%;
+        position: relative;
+        margin: var(--m) 0 var(--l)
+      }
+    }
+  }
+
+}
+

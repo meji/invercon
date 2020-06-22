@@ -5,3 +5,13 @@
     justify-content: space-around;
   }
 }
+@media (min-width: 1024px) {
+  #countries {
+    margin-bottom: -200px;
+    position: relative;
+    z-index: 2;
+  }
+}
+.home h2{
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+#featured-wine{
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    .img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      order: 1;
+      margin-bottom: var(--l);
+      img{
+        min-width: 200px;
+      }
+      &:after{
+        width: 150px;
+        filter: blur(7px);
+        height: 10px;
+        background: #000;
+        content: "";
+        border-radius: 100%;
+        position: relative;
+        bottom: 6px;
+      }
+    }
+    .data {
+      h2, .h4{
+        margin: 0 0 var(--m);
+      }
+      order: 2;
+      .chars{
+        list-style: none;
+        margin-bottom: var(--l);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+  #featured-wine{
+    .container {
+      flex-direction: row;
+      .img-container {
+        flex: 4;
+        margin-bottom: 0;
+      }
+      .data {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (min-width: 1024px){
+  #featured-wine{
+    .container {
+      .img-container {
+        margin-top: -210px;
+        order: 2;
+      }
+      .data {
+        order: 1;
+        justify-content: flex-start;
+        ul{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+}

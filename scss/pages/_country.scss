@@ -1,0 +1,10 @@
+#wines{
+  background: #FCFAF7;
+}
+
+@media (min-width: 1024px){
+  #wines .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

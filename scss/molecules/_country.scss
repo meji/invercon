@@ -1,15 +1,16 @@
 .country{
-  width: calc(100% + 32px);
+  width: calc(100% + var(--m)*2);
   height: 375px;
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 -16px var(--l);
+  margin: 0 calc(0px - var(--m)) var(--l);
   position: relative;
   img.bg{
     z-index: -1;
     position: absolute;
+    border-radius: 4px;
   }
   .content{
     padding: var(--l);
@@ -19,20 +20,25 @@
     justify-content: center;
     h3{
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 900;
       color: rgba(255, 255, 255, 0.6);
       margin: 0;
     }
     p, .btn{display: none;}
+    p{font-size: 0.8rem;}
   }
   &:hover{
     transition: var(--transition);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-
-    .content{justify-content: space-between;}
+    background: #fff;
+    .content{
+      justify-content: space-between;
+      height: 100%;
+    }
     h3{
       color: #333;
-      margin-bottom: var(--m);
+      margin: var(--m) 0 0;
+      font-weight: 600;
     }
     p, .btn{display: block;}
     img:not(.map){
@@ -57,13 +63,14 @@
   .country {
     width: 375px;
     margin: 0 auto var(--l);
+    border-radius: 4px;
   }
 }
 
 @media (min-width: 768px) {
   .country {
     &:nth-child(even) {
-      margin-top: 120px;
+      margin-top: 180px;
     }
     .map{
       top: -40px;

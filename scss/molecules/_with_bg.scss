@@ -1,0 +1,29 @@
+.with-bg{
+  margin-top: 0;
+  position: relative;
+  color: #fff;
+  .img-container{
+    height: 300px;
+    width: 100%;
+    margin-bottom: var(--l);
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+  }
+}
+@media screen and (min-width:1024px) {
+  .with-bg {
+    .img-container{
+      position: absolute;
+      z-index: -1;
+      height: 450px;
+      top:0;
+    }
+    .container{
+      height: 450px;
+    }
+  }
+}
